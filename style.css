@@ -100,6 +100,10 @@ body, html {
     margin: 5px;
 }
 
+.newsletter {
+    text-align: center;
+}
+
   
 /* Footer */
 .site-footer {
