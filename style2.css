@@ -35,7 +35,7 @@ body {
   .form-container button,
   .form-container .form-group input[type="submit"] {
     width: 100%;
-    background-color: #007bff;
+    background-color: crimson;
     border: none;
     color: white;
     padding: 12px;
@@ -45,7 +45,7 @@ body {
   }
   .form-container button:hover,
   .form-container .form-group input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: rgb(255, 0, 51);
   }
   .form-container .form-footer {
     text-align: center;

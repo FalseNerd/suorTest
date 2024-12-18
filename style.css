@@ -100,9 +100,7 @@ body, html {
     margin: 5px;
 }
 
-.newsletter {
-    text-align: center;
-}
+
 
   
 /* Footer */
@@ -166,7 +164,7 @@ body, html {
 }
 
 /* Icone social */
-/* .social-icons a {
+.social-icons a {
     display: inline-block;
     margin-right: 10px;
 }
@@ -174,14 +172,8 @@ body, html {
 .social-icons img {
     width: 24px;
     height: 24px;
-    filter: brightness(0) invert(1);
-    transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
     transform: scale(1.1);
-} */
-
-/* Footer bottom */
-
-
+} 
