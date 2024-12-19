@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confronto Lunghezza stringhe</title>
+    <script>
+        function confrontaLunghezza() {
+          let stringa1 = document.getElementById("stringa1").value;
+          let stringa2 = document.getElementById("stringa2").value;
+  
+          let lunghezza1 = stringa1.length;
+          let lunghezza2 = stringa2.length;
+  
+          let risultato = "";
+          if (lunghezza1 > lunghezza2) {
+            risultato = "La prima stringa è più lunga della seconda";
+          } else if (lunghezza1 < lunghezza2) {
+            risultato = "La seconda stringa è più lunga della prima";
+          } else {
+            risultato = "Le due stringhe hanno la stessa lunghezza";
+          }
+  
+          document.getElementById("risultato").innerText = risultato;
+        }
+      </script>
+  </head>
+  <body>
+    <form>
+        <label for="stringa1">Inserisci la prima stringa:</label>
+        <input type="text" id="stringa1" required /><br />
+        <label for="stringa2">Inserisci la seconda stringa:</label>
+        <input type="text" id="stringa2" required /><br />
+       
+  
+        <button type="button" onclick="confrontaLunghezza()">Confronta</button>
+      </form>
+      <p id="risultato"></p>
+    
+  </body>
+</html>
