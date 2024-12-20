@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registrazione</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-box">
+            <div class="form-header">
+                <button class="tab-button active" id="login-tab">Login</button>
+                <button class="tab-button" id="register-tab">Registrazione</button>
+            </div>
+            <form id="login-form" class="form-content active">
+                <h2>Login</h2>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Accedi</button>
+            </form>
+            <form id="register-form" class="form-content">
+                <h2>Registrazione</h2>
+                <input type="text" id="username" name="username" placeholder="Nome Utente" required>
+                <input type="email" id="email-reg" name="email" placeholder="Email" required>
+                <input type="password" id="password-reg" name="password" placeholder="Password" required>
+                <button type="submit">Registrati</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
