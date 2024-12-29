@@ -13,6 +13,11 @@
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <title>SuoreOnline</title>
   </head>
   <body>
@@ -65,21 +70,16 @@
         </div>
       </div>
     </section>
-    <section style="margin: 50px">
-      <p style="font-size: large">
+    <section class="subscribe-section">
+      <p class="subscribe-text">
         Vuoi rimanere aggiornato sugli ultimi peccati scoperti? Iscriviti subito
         e compila il form!
       </p>
-      <a
-        href="form.html"
-        target="_blank"
-        style="
-          background-color: crimson;
-          border: 1px solid crimson;
-          font-size: 30px;"
-        ><button type="button">Iscriviti</button></a
-      >
+      <a href="form.html" target="_blank">
+        <button type="button" class="subscribe-button">Iscriviti</button>
+      </a>
     </section>
+
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-section">
@@ -100,16 +100,21 @@
           <h4>Seguici e Scrivici</h4>
           <div class="social-icons">
             <a href="#" aria-label="Facebook"
-              ><img src="images/facebook-icon.png" alt="Facebook" width="25px"
-            /></a>
+              ><i class="fab fa-facebook-square"></i
+            ></a>
             <a href="#" aria-label="Whatsapp"
-              ><img src="images/whatsapp-icon.png" alt="Whatsapp" width="25px"
-            /></a>
+              ><i class="fab fa-whatsapp-square"></i
+            ></a>
+            <a href="#" aria-label="Radio"><i class="fa-solid fa-radio"></i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2024 SuoreOnline. Tutti i diritti riservati.</p>
+        <p class="developer">
+          Developed with <i class="fa-solid fa-heart"></i> by FalsaNerd
+          <i class="fa-solid fa-ghost"></i>
+        </p>
       </div>
     </footer>
   </body>

@@ -100,6 +100,43 @@ body, html {
     margin: 5px;
 }
 
+/* Sezione iscrizione */
+.subscribe-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffe6e6;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.subscribe-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subscribe-button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+}
+
+.subscribe-button:active {
+    background-color: #cc0000;
+    transform: scale(0.95);
+}
 
 
   
@@ -163,17 +200,22 @@ body, html {
     color: #aaa;
 }
 
-/* Icone social */
+.footer-bottom .developer {
+    font-size: 12px;
+    color:#ff4d4d;;
+    margin-top: 5px;
+}
+
+
 .social-icons a {
-    display: inline-block;
-    margin-right: 10px;
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: transform 0.3s, color 0.3s;
 }
 
-.social-icons img {
-    width: 24px;
-    height: 24px;
+.social-icons a:hover {
+    color: #ff4d4d;
+    transform: scale(1.2);
 }
 
-.social-icons img:hover {
-    transform: scale(1.1);
-} 

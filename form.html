@@ -13,7 +13,7 @@
   <body>
     <div class="form-container">
       <h2>Registrati su SuoreOnline</h2>
-      <form action="action_page.php" method="post">
+      <form action="action_page.php" method="post" novalidate>
         <div class="form-group">
           <label for="cognome">Cognome</label>
           <input
@@ -25,8 +25,8 @@
             required
           />
         </div>
-        <br />
-        <div class="form-group">
+
+        <div class="form-group mt-3">
           <label for="nome">Nome</label>
           <input
             type="text"
@@ -37,8 +37,8 @@
             required
           />
         </div>
-        <br />
-        <div class="form-group">
+
+        <div class="form-group mt-3">
           <label for="data">Data di nascita</label>
           <input
             type="date"
@@ -48,10 +48,11 @@
             required
           />
         </div>
-        <br />
-        <div class="form-group">
+
+        <div class="form-group mt-3">
           <label for="luogonascita">Luogo di Nascita</label>
           <select name="luoghi" id="luoghi" class="form-control" required>
+            <option value="">Seleziona il luogo...</option>
             <option value="Taranto">Taranto</option>
             <option value="Bari">Bari</option>
             <option value="Lecce">Lecce</option>
@@ -59,33 +60,71 @@
             <option value="Foggia">Foggia</option>
           </select>
         </div>
-        <br />
-        <div class="form-group">
-          <label>Genere</label><br />
-          <input
-            type="radio"
-            id="maschile"
-            name="genere"
-            value="maschile"
-            required
-          />
-          <label for="maschile">Maschile</label>
-          <input type="radio" id="femminile" name="genere" value="femminile" />
-          <label for="femminile">Femminile</label>
-          <input type="radio" id="altro" name="genere" value="altro" />
-          <label for="altro">Altro</label>
-        </div>
-        <br />
-        <div class="form-group">
-          <label>Preferenze</label><br />
-          <input type="checkbox" id="newsletter" name="newsletter" value="si" />
-          <label for="newsletter">Iscriviti alla newsletter</label><br />
-          <input type="checkbox" id="marketing" name="marketing" value="si" />
-          <label for="marketing">Accetto le comunicazioni di marketing</label>
-        </div>
-        <br />
 
-        <div class="form-group">
+        <div class="form-group mt-3">
+          <label>Genere</label><br />
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              id="maschile"
+              name="genere"
+              value="maschile"
+              class="form-check-input"
+              required
+            />
+            <label for="maschile" class="form-check-label">Maschile</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              id="femminile"
+              name="genere"
+              value="femminile"
+              class="form-check-input"
+            />
+            <label for="femminile" class="form-check-label">Femminile</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              id="altro"
+              name="genere"
+              value="altro"
+              class="form-check-input"
+            />
+            <label for="altro" class="form-check-label">Altro</label>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label>Preferenze</label><br />
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              value="si"
+              class="form-check-input"
+            />
+            <label for="newsletter" class="form-check-label"
+              >Iscriviti alla newsletter</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="marketing"
+              name="marketing"
+              value="si"
+              class="form-check-input"
+            />
+            <label for="marketing" class="form-check-label"
+              >Accetto le comunicazioni di marketing</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
           <label for="commenti">Messaggio</label>
           <textarea
             id="commenti"
@@ -95,14 +134,11 @@
             placeholder="Scrivi qui le tue domande"
           ></textarea>
         </div>
-        <br />
 
-        <!-- <button type="submit" id="myButton" class="btn btn-dark">
-          Invia
-        </button> -->
-
-        <button id="myButton">Registrati</button>
-        <p id="message"></p>
+        <button type="submit" id="myButton" class="btn btn-dark w-100 mt-4">
+          Registrati
+        </button>
+        <p id="message" class="text-center mt-3"></p>
       </form>
     </div>
     <script src="myscript.js"></script>
