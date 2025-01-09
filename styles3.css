@@ -1,0 +1,32 @@
+/* Rimuove la sottolineatura dai link social */
+.footer a {
+    text-decoration: none !important; /* Aggiunto !important per sovrascrivere eventuali stili */
+  }
+  
+  .navbar {
+    background-color: #333 !important; /* Navbar colore #333 */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important; /* Colore dei link nella navbar */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ccc !important; /* Colore dei link al passaggio del mouse */
+  }
+  
+  /* Cambia il colore dei link social al passaggio del mouse */
+  .footer a:hover {
+    color: #ddd !important;
+  }
+  
+  /* Impostare il colore di sfondo della navbar per evitare che sia bianco */
+  .navbar-dark {
+    background-color: #333 !important; /* Navbar scura */
+  }
+  
+  /* Aggiungere padding per rendere più visibile la navbar */
+  .navbar {
+    padding: 10px 0;
+  }
+  
