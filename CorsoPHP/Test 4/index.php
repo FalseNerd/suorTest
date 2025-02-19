@@ -1,6 +1,6 @@
 
 <?php
-include('header.php');  // Include l'header
-include('body.php');    // Include il corpo con la tabella
-include('footer.php');  // Include il footer
+include('header.php'); 
+include('body.php');    
+include('footer.php');  
 ?>
